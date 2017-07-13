@@ -1,0 +1,275 @@
+---
+title: "R Notebook"
+output:
+  html_notebook: default
+  pdf_document: default
+---
+
+```{r libraries}
+library(tidyverse)
+library(forcats)
+library(janitor)
+```
+
+```{r data}
+funded <- read_csv("data/FundedSports.csv")
+```
+# Basic plot
+This a basic blot, typical of ggplot's default values.
+```{r}
+basic_plot <- ggplot(data = funded) +
+  geom_bar(aes(x = fct_reorder(Location, Year), 
+               y = Funding,
+               fill = fct_reorder(SportGroup, Funding)), 
+           stat = "summary", fun.y = "sum")
+
+basic_plot
+```
+# Setting labels
+There is a function in ggplot, labs. Can set
+
+* title, subtitle, caption
+
+* x, y
+
+* colour, fill, shape
+
+```{r setting-labels}
+label_plot <- basic_plot +
+  labs(title = "Changes in Funding For Olympic Sports",
+       subtitle = "Funding Provided by UK Sport World Class Performance Programme",
+       x = "", y = "", 
+       caption = "Data taken from uksport.gov.uk",
+       fill = "Event")
+
+label_plot
+```
+
+```{r}
+ex_plot <- ggplot(data = funded) +
+  geom_line(aes(x = Date,
+                y = Funding,
+                colour = Sport))
+            
+ex_plot_labs <- ex_plot +
+  labs(title = "Funding over time for Summer Olympic sports",
+       subtitle = "As provided by UK Sport",
+       x = "", y = "")
+
+ex_plot_labs
+
+```
+# Scales
+
+Naming convention:
+```
+
+```
+Control:
+
+* Break points (tick marks)
+
+* Labels
+
+* Limits
+
+* Colour/shape/size
+
+* ...
+
+Scale functions let us define how the X and Y axes appear
+
+We can use scale functions for:
+
+* Continuous
+
+* Discrete
+
+* Date/Time
+
+* Transformation
+```{r}
+labels <- c("Sydney\n(2000)", "Athens\n(2004)", 
+            "Beijing\n(2008)", "London\n(2012)", 
+            "Rio de Janeiro\n(2016)")
+
+axis_plot <- label_plot +
+  scale_x_discrete(labels = labels) +
+  scale_y_continuous(breaks = seq(0, 25e7, by = 50e6),
+                     minor_breaks = NULL,
+                     labels = scales::dollar_format("£"))
+
+axis_plot
+
+```
+
+## Colours, shapes and sizes
+The default options are:
+
+* Continuous for numeric data
+
+* Manual for setting specific values
+
+There are a number of predefined options (particularly for colour)
+* gradient
+
+* brewer
+
+* ...
+
+```{r}
+cols <- c( "grey", "lightBlue", "orangeRed", 
+           "steelBlue", "royalBlue", "navyBlue")
+
+axis_plot_cols <- axis_plot +
+  scale_fill_manual(values = cols)
+
+axis_plot_cols
+```
+
+```{r}
+cities <- c("Sydney", "Athens", 
+            "Beijing", "London", 
+            "Rio de Janeiro")
+
+ex_plot_months <- ex_plot_labs +
+  scale_x_date(breaks = unique(funded$Date),
+                 date_labels = paste0(cities, "\n%b %Y")) +
+  scale_y_continuous(labels = scales::dollar_format("£"))
+
+ex_plot_months
+```
+
+# Legends
+## Themes
+Position of the legend is controlled by the themes layer
+## Guides
+The guide functions let us control all aspects of a legend
+
+* titles
+
+* positioning
+
+* ordering
+```{r}
+axis_plot_legend <- axis_plot_cols +
+  theme(legend.position = "bottom",
+        legend.justification = "left") +
+  guides(fill = guide_legend(
+    title.position = "top",
+    title.hjust = 0.5,
+    nrow = 1,
+    label.position = "bottom"
+  ))
+
+axis_plot_legend
+```
+
+```{r}
+ex_plot_legend <- ex_plot_months +
+  theme(legend.position = "bottom",
+        legend.justification = "left") +
+  guides(colour =
+           guide_legend(
+            override.aes = list(size = 4,
+                                alpha = 0.5),
+            nrow = 4,
+            title.position = "top"
+    )
+  )
+
+ex_plot_legend
+```
+
+```{r}
+cont_plot <- ggplot(data = funded) +
+  geom_bar(aes(x = fct_reorder(Location, Year),
+               y = Funding, fill = Year),
+           stat = "summary", fun.y = "sum") +
+  guides(fill = guide_legend())
+
+cont_plot
+```
+
+# Themes
+There are a number of default themes that will control the look and feel of our plot
+
+We can add themes for a session or on a plot by plot basis
+
+* After adding for a session
+
+```{r}
+theme_set(theme_classic(base_size = 14))
+```
+
+# Custom themes
+* We can create a custom theme using the `theme_update` function
+
+```{r}
+theme_update(legend.position = "bottom")
+
+cont_plot
+
+```
+
+# Element types
+All aspects of a graphic are either
+* rectangle
+
+* line
+
+* text
+
+We set them with the appropriate `element_*` function
+
+We can configure:
+* colour/fill
+
+* size
+
+* justification & angle
+
+* fonts
+
+```{r}
+theme_update(legend.position = "bottom",
+             axis.text.y = element_text(angle = 45))
+
+axis_plot_cols
+
+```
+
+```{r}
+theme_update(legend.position = "bottom",
+             axis.text.y = element_text(angle = 45),
+             panel.grid.major.y = element_line(colour = "black",
+                                               #dashed
+                                               linetype = 2),
+             panel.background = element_rect(fill = "turquoise"))
+
+axis_plot_cols
+
+# axis_plot_cols +
+  # theme()
+
+```
+
+```{r}
+theme_set(theme_bw())
+
+theme_update(panel.grid.major.y = element_line(linetype = 2),
+             plot.title = element_text(hjust = 0.5),
+             plot.subtitle = element_text(hjust = 0.5))
+
+
+ex_plot_legend
+
+```
+
+```{r}
+theme_update(legend.position = "bottom")
+
+cont_plot +
+  theme(axis.title.x = element_text(margin = margin(40, 0, 0, 0)))
+
+```
