@@ -24,8 +24,11 @@ exPlot <- exPlot +
 
 exPlot <- exPlot +
   theme(legend.position = "bottom", legend.justification = "left") +
-  guides(colour = guide_legend(override.aes = list(size = 4), 
-                               title.position = "top", nrow = 4))
+  guides(colour = guide_legend(
+    override.aes = list(size = 4),
+    title.position = "top",
+    nrow = 4
+  ))
 
 exPlot +
   theme(panel.grid.major.y = element_line(linetype = 2), 
