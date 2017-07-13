@@ -5,7 +5,7 @@
 library(tidyverse)
 library(forcats)
 
-funded <- read_csv("./Desktop/FundedSports.csv")
+funded <- read_csv("data/FundedSports.csv")
 
 basicPlot <- ggplot(data = funded) +
   geom_bar(aes(x = fct_reorder(Location, Year), 
