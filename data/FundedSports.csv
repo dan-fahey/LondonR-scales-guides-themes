@@ -1,0 +1,104 @@
+Sport,Location,Funding,Year,Month,Day,SportGroup,Date
+Athletics,Sydney,106e5,2e3,9,15,Athletics,2000-09-15
+Canoeing,Sydney,45e5,2e3,9,15,Other,2000-09-15
+Cycling,Sydney,54e5,2e3,9,15,Cycling,2000-09-15
+Diving,Sydney,9e5,2e3,9,15,Other,2000-09-15
+Equestrian,Sydney,3e6,2e3,9,15,Other,2000-09-15
+Gymnastics,Sydney,59e5,2e3,9,15,Other,2000-09-15
+Judo,Sydney,39e5,2e3,9,15,Other,2000-09-15
+Modern Pentathlon,Sydney,11e5,2e3,9,15,Other,2000-09-15
+Rowing,Sydney,96e5,2e3,9,15,Rowing,2000-09-15
+Sailing,Sydney,51e5,2e3,9,15,Sailing,2000-09-15
+Swimming,Sydney,69e5,2e3,9,15,Swimming,2000-09-15
+Taekwondo,Sydney,6e5,2e3,9,15,Other,2000-09-15
+Triathlon,Sydney,14e5,2e3,9,15,Other,2000-09-15
+Archery,Athens,8e5,2004,8,13,Other,2004-08-13
+Athletics,Athens,114e5,2004,8,13,Athletics,2004-08-13
+Canoeing,Athens,47e5,2004,8,13,Other,2004-08-13
+Cycling,Athens,86e5,2004,8,13,Cycling,2004-08-13
+Diving,Athens,14e5,2004,8,13,Other,2004-08-13
+Equestrian,Athens,44e5,2004,8,13,Other,2004-08-13
+Gymnastics,Athens,41e5,2004,8,13,Other,2004-08-13
+Judo,Athens,41e5,2004,8,13,Other,2004-08-13
+Modern Pentathlon,Athens,2e6,2004,8,13,Other,2004-08-13
+Rowing,Athens,106e5,2004,8,13,Rowing,2004-08-13
+Sailing,Athens,76e5,2004,8,13,Sailing,2004-08-13
+Shooting,Athens,14e5,2004,8,13,Other,2004-08-13
+Swimming,Athens,64e5,2004,8,13,Swimming,2004-08-13
+Taekwondo,Athens,6e5,2004,8,13,Other,2004-08-13
+Triathlon,Athens,26e5,2004,8,13,Other,2004-08-13
+Weightlifting,Athens,3e5,2004,8,13,Other,2004-08-13
+Archery,Beijing,2834e3,2008,8,8,Other,2008-08-08
+Athletics,Beijing,26513e3,2008,8,8,Athletics,2008-08-08
+Badminton,Beijing,8759e3,2008,8,8,Other,2008-08-08
+Basketball,Beijing,3694e3,2008,8,8,Other,2008-08-08
+Boxing,Beijing,5005e3,2008,8,8,Other,2008-08-08
+Canoeing,Beijing,13622e3,2008,8,8,Other,2008-08-08
+Cycling,Beijing,22151e3,2008,8,8,Cycling,2008-08-08
+Diving,Beijing,5873e3,2008,8,8,Other,2008-08-08
+Equestrian,Beijing,11727e3,2008,8,8,Other,2008-08-08
+Fencing,Beijing,3074e3,2008,8,8,Other,2008-08-08
+Gymnastics,Beijing,9036e3,2008,8,8,Other,2008-08-08
+Handball,Beijing,2986e3,2008,8,8,Other,2008-08-08
+Hockey,Beijing,9882e3,2008,8,8,Other,2008-08-08
+Judo,Beijing,6947e3,2008,8,8,Other,2008-08-08
+Modern Pentathlon,Beijing,592e4,2008,8,8,Other,2008-08-08
+Rowing,Beijing,26042e3,2008,8,8,Rowing,2008-08-08
+Sailing,Beijing,22292e3,2008,8,8,Sailing,2008-08-08
+Shooting,Beijing,5056e3,2008,8,8,Other,2008-08-08
+Swimming,Beijing,20659e3,2008,8,8,Swimming,2008-08-08
+Synchronised Swimming,Beijing,1648e3,2008,8,8,Other,2008-08-08
+Table Tennis,Beijing,2533e3,2008,8,8,Other,2008-08-08
+Taekwondo,Beijing,2667e3,2008,8,8,Other,2008-08-08
+Triathlon,Beijing,5113e3,2008,8,8,Other,2008-08-08
+Volleyball,Beijing,4112e3,2008,8,8,Other,2008-08-08
+Water Polo,Beijing,3147e3,2008,8,8,Other,2008-08-08
+Weightlifting,Beijing,1686e3,2008,8,8,Other,2008-08-08
+Wrestling,Beijing,2125e3,2008,8,8,Other,2008-08-08
+Archery,London,4408e3,2012,7,27,Other,2012-07-27
+Athletics,London,25148e3,2012,7,27,Athletics,2012-07-27
+Badminton,London,7434900,2012,7,27,Other,2012-07-27
+Basketball,London,8599e3,2012,7,27,Other,2012-07-27
+Boxing,London,9551400,2012,7,27,Other,2012-07-27
+Canoeing,London,16176700,2012,7,27,Other,2012-07-27
+Cycling,London,26032e3,2012,7,27,Cycling,2012-07-27
+Diving,London,6535700,2012,7,27,Other,2012-07-27
+Equestrian,London,13395100,2012,7,27,Other,2012-07-27
+Fencing,London,2529335,2012,7,27,Other,2012-07-27
+Gymnastics,London,10770600,2012,7,27,Other,2012-07-27
+Handball,London,2924721,2012,7,27,Other,2012-07-27
+Hockey,London,15013200,2012,7,27,Other,2012-07-27
+Judo,London,7498e3,2012,7,27,Other,2012-07-27
+Modern Pentathlon,London,6288800,2012,7,27,Other,2012-07-27
+Rowing,London,27287600,2012,7,27,Rowing,2012-07-27
+Sailing,London,22942700,2012,7,27,Sailing,2012-07-27
+Shooting,London,2461866,2012,7,27,Other,2012-07-27
+Swimming,London,25144600,2012,7,27,Swimming,2012-07-27
+Synchronised Swimming,London,3398300,2012,7,27,Other,2012-07-27
+Table Tennis,London,1213848,2012,7,27,Other,2012-07-27
+Taekwondo,London,4833600,2012,7,27,Other,2012-07-27
+Triathlon,London,5291300,2012,7,27,Other,2012-07-27
+Volleyball,London,3536077,2012,7,27,Other,2012-07-27
+Water Polo,London,2928039,2012,7,27,Other,2012-07-27
+Weightlifting,London,1365157,2012,7,27,Other,2012-07-27
+Wrestling,London,1435210,2012,7,27,Other,2012-07-27
+Archery,Rio de Janeiro,2952237,2016,8,5,Other,2016-08-05
+Athletics,Rio de Janeiro,26824206,2016,8,5,Athletics,2016-08-05
+Badminton,Rio de Janeiro,5737524,2016,8,5,Other,2016-08-05
+Boxing,Rio de Janeiro,13764437,2016,8,5,Other,2016-08-05
+Canoeing,Rio de Janeiro,20043618,2016,8,5,Other,2016-08-05
+Cycling,Rio de Janeiro,30267816,2016,8,5,Cycling,2016-08-05
+Diving,Rio de Janeiro,7467860,2016,8,5,Other,2016-08-05
+Equestrian,Rio de Janeiro,17992600,2016,8,5,Other,2016-08-05
+Fencing,Rio de Janeiro,4225261,2016,8,5,Other,2016-08-05
+Gymnastics,Rio de Janeiro,14615428,2016,8,5,Other,2016-08-05
+Hockey,Rio de Janeiro,16141393,2016,8,5,Other,2016-08-05
+Judo,Rio de Janeiro,7366200,2016,8,5,Other,2016-08-05
+Modern Pentathlon,Rio de Janeiro,6972174,2016,8,5,Other,2016-08-05
+Rowing,Rio de Janeiro,32622862,2016,8,5,Rowing,2016-08-05
+Sailing,Rio de Janeiro,25504055,2016,8,5,Sailing,2016-08-05
+Shooting,Rio de Janeiro,3950888,2016,8,5,Other,2016-08-05
+Swimming,Rio de Janeiro,20795828,2016,8,5,Swimming,2016-08-05
+Taekwondo,Rio de Janeiro,8052837,2016,8,5,Other,2016-08-05
+Triathlon,Rio de Janeiro,7457977,2016,8,5,Other,2016-08-05
+Weightlifting,Rio de Janeiro,1709340,2016,8,5,Other,2016-08-05
